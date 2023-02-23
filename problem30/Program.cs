@@ -4,7 +4,8 @@ int[] GenerateArray()
 {
   int arrLength = 8;
   int[] array = new int[arrLength];
-  for (int i = 0; i < arrLength; i++) array[i] = new Random().Next(0, 2);
+  Random rnd = new Random();
+  for (int i = 0; i < arrLength; i++) array[i] = rnd.Next(0, 2);
   return array;
 }
 
